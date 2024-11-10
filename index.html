@@ -32,7 +32,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title"> AgEval: A Benchmark for Zero-Shot and Few-Shot Plant Stress Phenotyping with Multimodal LLMs</h1>
+          <h1 class="title is-1 publication-title"> Evaluating Neural Radiance Fields for 3D PlantGeometry Reconstruction in Field Conditions</h1>
           <div class="is-size-5 publication-authors">
             <!-- Paper authors -->
             <span class="author-block">
@@ -80,7 +80,7 @@
     
     <!-- Code link -->
     <span class="link-block">
-        <a href="https://github.com/arbab-ml/AgEval" target="_blank" class="external-link button is-normal is-rounded is-dark">
+        <a href=" https://github.com/idealab-isu/Evaluate-NeRFs-for-Plants" target="_blank" class="external-link button is-normal is-rounded is-dark">
             <span class="icon">
                 <i class="fab fa-github"></i>
             </span>
@@ -88,15 +88,7 @@
         </a>
     </span>
     
-    <!-- Benchmark link -->
-    <span class="link-block">
-        <a href="https://github.com/arbab-ml/AgEval?tab=readme-ov-file#data-loader-data_loaderpy" target="_blank" class="external-link button is-normal is-rounded is-dark">
-            <span class="icon">
-                <i class="fas fa-chart-line"></i>
-            </span>
-            <span>Benchmark</span>
-        </a>
-    </span>
+
 </div>
 
         </div>
@@ -128,13 +120,7 @@
         <div class="content has-text-justified">
           <p>
 
-            Plant stress phenotyping traditionally relies on expert assessments and specialized models, limiting scalability in agriculture. Recent advances in multimodal large language models (LLMs) offer potential solutions to this challenge.
-            We present AgEval, a benchmark comprising 12 diverse plant stress phenotyping tasks, to evaluate these models’ capabilities. Our study assesses zero-shot and few-shot in-context learning performance of state-of-the-art models, including
-            Claude, GPT, Gemini, and LLaVA. Results show significant performance improvements with few-shot learning, with F1 scores increasing from 46.24% to 73.37% in 8-shot identification for the best-performing model. Few-shot examples from other
-            classes in the dataset have negligible or negative impacts, although having the exact category example helps to increase performance by 15.38%. We also quantify the consistency of model performance across different classes within each task, 
-            finding that the coefficient of variance (CV) ranges from 26.02% to 58.03% across models, implying that subject matter expertise is needed – of ’difficult’ classes – to achieve reliability in performance. AgEval establishes baseline metrics 
-            for multimodal LLMs in agricultural applications, offering insights into their promise for enhancing plant stress phenotyping at scale 
-          </p>
+            We evaluate different Neural Radiance Field (NeRF) techniques for the 3D reconstruction of plants invaried environments, from indoor settings to outdoor fields. Traditional methods usually fail to capture thecomplex geometric details of plants, which is crucial for phenotyping and breeding studies. We evaluatethe reconstruction fidelity of NeRFs in 3 scenarios with increasing complexity and compare the resultswith the point cloud obtained using light detection and ranging as ground truth. In the most realistic fieldscenario, the NeRF models achieve a 74.6% F1 score after 30 min of training on the graphics processingunit, highlighting the efficacy of NeRFs for 3D reconstruction in challenging environments. Additionally, wepropose an early stopping technique for NeRF training that almost halves the training time while achievingonly a reduction of 7.4% in the average F1 score. This optimization process substantially enhances thespeed and efficiency of 3D reconstruction using NeRFs. Our findings demonstrate the potential of NeRFsin detailed and realistic 3D plant reconstruction and suggest practical approaches for enhancing thespeed and efficiency of NeRFs in the 3D reconstruction process.  </p>
         </div>
       </div>
     </div>
